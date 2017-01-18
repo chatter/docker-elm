@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/var/www/elm
+    ports:
+      - "8000:8000"
+    env_file: .env
